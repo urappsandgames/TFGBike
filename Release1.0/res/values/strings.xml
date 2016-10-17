@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UrBike</string>
+    <string name="title_activity_main">Bienvenido a UrBike</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_back">Atras</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_activity_perfil">Tu Perfil</string>
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="title_activity_activity_">Activity_Activity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_prueba">prueba</string>
+    <string name="title_activity_activity__video">Activity_Video</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="action_example">Example action</string>
+
+    <!-- FACEBOOK -->
+    <string name="facebook_app_id">1656780361264814</string>
+
+    <!-- DIALOGS -->
+    <string name="dialog_yes">Si</string>
+    <string name="dialog_no">No</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="dialog_exitTitle">¿Realmente quieres salir?</string>
+    <string name="dialog_confirm">¿Confirmar Acción?</string>
+
+    <!-- NAVIGATION -->
+    <string name="title_section_default">Menu</string>
+    <string name="title_section1">Home</string>
+    <string name="title_section2">Mi Perfil</string>
+    <string name="title_section3">Mis Bicis</string>
+    <string name="title_section4">Componentes</string>
+    <string name="title_section5">Actividades</string>
+    <string name="title_section6">Consultas</string>
+    <string name="title_section7">Video Tutoriales</string>
+    <string name="title_section8">Settings</string>
+    <string name="title_section9">Log Out</string>
+    <string name="title_section11">Nueva Bicicleta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_activity__consulta">Activity_Consulta</string>
+    <string name="title_activity_activity__activity__end">Activity_Activity_End</string>
+
+    <!-- ERRORES -->
+    <string name="error_server">Error: Imposible conectar</string>
+    <string name="error_login_inesperado">Ocurrio algun error inesperado al realizar el login.\nComprueba tu conexion a internet</string>
+    <string name="error_email_existe">Error: Email ya esta en nuestra base de datos de usuarios</string>
+    <string name="error_datos_inesperados">Error: Datos recibidos inesperados</string>
+    <string name="error_nombre_no_valido">Campo no valido, no mayor que 40 caracteres</string>
+    <string name="error_edad_no_valido">Edad no valida, numero de 1 a 100</string>
+    <string name="error_peso_no_valido">Peso no valido, numero de 0 a 300</string>
+    <string name="error_precio_no_valido">Debe ser positivo, con 9 digitos máximo, usa "." para decimales</string>
+    <string name="error_gasto_no_valido">Mayor o igual que precio, 9 digitos máximo, usa "." para decimales</string>
+
+    <!-- MENSAJES-->
+    <string name="msg_registro_ok">Usuario registrado correctamente, logueate para comenzar a usar UrBike</string>
+    <string name="msg_registro_bad">Error: alta al servidor fallida. Vuelva a intentarlo</string>
+    <string name="msg_datos_modificados_ok">Datos modificados correctamente</string>
+    <string name="msg_datos_modificados_badServer">Error: con el servidor, modificados en el dispositivo correctamente</string>
+    <string name="msg_datos_agregados_badServer">Error: con el servidor, agregados en el dispositivo correctamente</string>
+    <string name="msg_datos_eliminados_ok">Datos eliminados correctamente</string>
+    <string name="msg_datos_eliminados_badServer">Error: con el servidor, datos NO eliminados</string>
+    <string name="msg_bici_agregada_ok">Bicicleta añadida</string>
+    <string name="msg_actividad_agregada_ok">Datos añadidos</string>
+    <string name="msg_datos_agregar_local_bad">Warning: Datos agregados en el servidor pero no en el dispositivo, Haga Login de nuevo.</string>
+    <string name="msg_datos_eliminar_local_bad">Warning: Datos eliminados en el servidor pero no en el dispositivo, Haga Login de nuevo.</string>
+    <string name="msg_datos_modificar_local_bad">Warning: Datos modificados en el servidor pero no en el dispositivo, Haga Login de nuevo.</string>
+    <string name="msg_componente_agregado_ok">Componente añadido</string>
+
+    <!-- SETTINGS -->
+    <string name="setting_borrar_base">Borra toda la informacion descargada del dispositivo. \n\nHacer login para volver a descargarla.</string>
+    <string name="setting_borrar_base_usuario">Borra los datos del usuario del dispositivo. \n\nHacer login para volver a descargarlos.</string>
+    <string name="setting_lenguaje">Cambia el lenguaje de la aplicacion.</string>
+    <string name="setting_acerca">Muestra informacion sobre UrBike</string>
+    <string name="setting_msg_base_borrada_ok">BDLocal borrada, Vuelve a hacer login.</string>
+    <string name="setting_msg_base_borrada_bad">Error: al borrar la BDLocal, Vuelve a intentarlo.</string>
+    <string name="setting_msg_busuario_borrada_ok">Datos locales de usuario borrados, Vuelve a hacer login.</string>
+    <string name="setting_msg_busuario_borrada_bad">Error: en el borrado de datos locales de usuario.</string>
+
+    <!-- CONSULTAS -->
+    <string name="consulta_msg_vacia">La consulta no devolvió ningún resultado</string>
+    <string name="consulta_tipo_consulta">Elije tipo de consulta: </string>
+    <string name="consulta_propietario">Propietario: </string>
+    <string name="consulta_tipo">Tipo: </string>
+    <string name="consulta_precio">Precio: </string>
+    <string name="consulta_peso">Peso: </string>
+    <string name="consulta_buscar">Buscar </string>
+    <string name="consulta_msg_atras">Atras</string>
+
+
+</resources>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choice_componentType">
+        <item>Cadena</item>
+        <item>Rueda delantera</item>
+        <item>Rueda trasera</item>
+        <item>Horquilla</item>
+        <item>Manillar</item>
+        <item>Pedales</item>
+        <item>Neumatico delantero</item>
+        <item>Neumatico trasero</item>
+        <item>Eje inferior</item>
+        <item>Freno delantero</item>
+        <item>Freno trasero</item>
+        <item>Pastillas de freno delantero</item>
+        <item>Pastillas de freno trasero</item>
+        <item>Palanca de freno delantero</item>
+        <item>Palanca de freno trasero</item>
+        <item>Cable freno delantero</item>
+        <item>Cable freno trasero</item>
+        <item>Disco de freno delantero</item>
+        <item>Disco de freno trasero</item>
+        <item>Casete</item>
+        <item>Platos</item>
+        <item>Viela</item>
+        <item>Cambio de marchas delantero</item>
+        <item>Cambio de marchas trasero</item>
+        <item>Auriculares</item>
+        <item>Sillin</item>
+        <item>Tija del sillin</item>
+        <item>Potencia</item>
+        <item>Palancas de cambio</item>
+        <item>Amortiguador delantero</item>
+        <item>Amortiguador trasero</item>
+        <item>Cuadro</item>
+
+    </string-array>
+</resources>

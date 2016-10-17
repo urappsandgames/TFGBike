@@ -1,0 +1,266 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tfg.carlos.tfgbike.Activity.Activity_Activity"
+    android:background="#ffe1d5ff"
+    android:id="@+id/view_main_activity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.tfg.carlos.tfgbike.Activity.Activity_Activity"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_margin="10dp"
+        android:layout_gravity="center|top"
+        android:nestedScrollingEnabled="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:focusableInTouchMode="false"
+            android:id="@+id/layoutMap"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.google.android.gms.maps.MapFragment"
+                android:id="@+id/map" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:layout_weight="0.05"
+            android:weightSum="1"
+            android:id="@+id/layoutActivityButtons1">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cambiar Mapa"
+                android:id="@+id/b_activity_chage_map"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.7"
+                android:onClick="OnClickButtonCambiarMap" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ampliar"
+                android:id="@+id/b_activity_fullScreen"
+                android:layout_weight="0.3"
+                android:onClick="OnClickButtonExpandMap" />
+            </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ActivityScrollView"
+            android:layout_weight="0.5"
+            android:background="#f5f5f5f5">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_activity_datos">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Velocidad:"
+                            android:id="@+id/textView32"
+                            android:layout_column="0"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/text_activity_velocidad"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Velocidad media:"
+                            android:id="@+id/textView38"
+                            android:layout_column="0"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/text_activity_velocidadMedia"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Distancia (Km):"
+                            android:id="@+id/textView34"
+                            android:layout_column="0"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/text_activity_distancia"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Tiempo:"
+                            android:id="@+id/textView36"
+                            android:layout_column="0"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/text_activity_tiempo"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Altitud:"
+                            android:id="@+id/textView37"
+                            android:layout_column="0"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/text_activity_altitud"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Altitud +/-:"
+                            android:id="@+id/textView39"
+                            android:layout_column="0"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/text_activity_altitud_relativa"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:text="Pendiente:"
+                            android:id="@+id/textView40"
+                            android:layout_column="0"
+                            android:textAlignment="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="?android:attr/textAppearanceLarge"
+                            android:text="-"
+                            android:id="@+id/text_activity_pendiente"
+                            android:layout_column="1" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:weightSum="1"
+            android:id="@+id/layoutActivityButtons2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comenzar"
+                android:id="@+id/b_activity_start_end"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_weight="0.5"
+                android:onClick="OnClickButtonActivityEnd" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pausar"
+                android:layout_weight="0.5"
+                android:id="@+id/b_activity_pause_resume" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</FrameLayout>

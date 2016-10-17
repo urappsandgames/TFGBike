@@ -1,0 +1,263 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tfg.carlos.tfgbike.Fragments.Fragment_Bici"
+    android:background="#1336ff0c">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/linearlayoutbici"
+        android:baselineAligned="false"
+        android:measureWithLargestChild="false"
+        android:minWidth="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:weightSum="1">
+
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_bici"
+                android:spinnerMode="dropdown"
+                android:layout_weight="0.7"
+                android:background="#ffffffff" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="*Nueva"
+                android:id="@+id/button_bici_new"
+                android:layout_gravity="right"
+                android:layout_weight="0.3"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Modificar bici seleccionada"
+            android:id="@+id/button_bici_mod"
+            android:layout_gravity="center_horizontal"
+            android:onClick="onClickBikeMod" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableLayout"
+                android:layout_gravity="center">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Marca:"
+                        android:id="@+id/textView3"
+                        android:layout_column="0"
+                        android:layout_weight="0.3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/bici_marca"
+                        android:layout_column="2"
+                        android:background="#F5F5F5"
+                        android:layout_weight="0.7"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Modelo: "
+                        android:id="@+id/textView18"
+                        android:layout_column="0"
+                        android:layout_weight="0.3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/bici_modelo"
+                        android:layout_column="2"
+                        android:background="#F5F5F5"
+                        android:layout_weight="0.7"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Peso:"
+                        android:id="@+id/textView19"
+                        android:layout_column="0"
+                        android:layout_weight="0.3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/bici_talla"
+                        android:layout_column="2"
+                        android:background="#F5F5F5"
+                        android:layout_weight="0.7"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Tipo:"
+                        android:id="@+id/textView20"
+                        android:layout_column="0"
+                        android:layout_weight="0.3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/bici_tipo"
+                        android:layout_column="2"
+                        android:background="#F5F5F5"
+                        android:layout_weight="0.7"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Precio:"
+                        android:id="@+id/textView22"
+                        android:layout_column="0"
+                        android:layout_weight="0.3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/bici_precio"
+                        android:layout_column="2"
+                        android:background="#F5F5F5"
+                        android:layout_weight="0.7"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Km:"
+                        android:id="@+id/textView23"
+                        android:layout_column="0"
+                        android:layout_weight="0.3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/bici_km"
+                        android:layout_column="2"
+                        android:background="#F5F5F5"
+                        android:layout_weight="0.7"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:padding="10dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Gasto:"
+                        android:id="@+id/textView24"
+                        android:layout_column="0"
+                        android:layout_weight="0.3"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Medium Text"
+                        android:id="@+id/bici_gasto"
+                        android:layout_column="2"
+                        android:background="#F5F5F5"
+                        android:layout_weight="0.7"/>
+                </TableRow>
+            </TableLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_bici"
+                android:focusableInTouchMode="false">
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

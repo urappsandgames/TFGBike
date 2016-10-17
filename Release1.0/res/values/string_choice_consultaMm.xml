@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choice_consulta_Mayormenor">
+        <item>Mayor que</item>
+        <item>Menor que</item>
+    </string-array>
+</resources>

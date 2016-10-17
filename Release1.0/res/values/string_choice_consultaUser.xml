@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choice_consultaUser">
+        <item>Yo</item>
+        <item>Todos</item>
+    </string-array>
+</resources>

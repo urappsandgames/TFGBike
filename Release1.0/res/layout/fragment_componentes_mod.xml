@@ -1,0 +1,336 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tfg.carlos.tfgbike.Fragments.Fragment_Componentes_Mod"
+    android:background="#ffcae5ff">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_margin="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar Componente"
+            android:id="@+id/button_componente_mod_guardar"
+            android:layout_gravity="center_vertical" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView5">
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="*Bici:"
+                        android:id="@+id/textView30"
+                        android:layout_weight="0.3"/>
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_componentes_bici"
+                        android:layout_weight="0.7"
+                        android:background="#ffffffff" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="*Tipo:"
+                        android:id="@+id/textView40"
+                        android:layout_weight="0.3" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_componentes_tipo"
+                        android:layout_weight="0.7"
+                        android:background="#ffffffff" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="*Marca:"
+                        android:id="@+id/textView41"
+                        android:layout_weight="0.3" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/componente_mod_marca"
+                        android:layout_weight="0.7"
+                        android:maxWidth="1dp"
+                        android:maxLength="40"
+                        android:background="#ffffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="*Modelo:"
+                        android:id="@+id/textView42"
+                        android:layout_weight="0.3" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/componente_mod_modelo"
+                        android:layout_weight="0.7"
+                        android:maxWidth="1dp"
+                        android:maxLength="40"
+                        android:background="#ffffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Peso(kg):"
+                        android:id="@+id/textView43"
+                        android:layout_weight="0.3" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/componente_mod_peso"
+                        android:layout_weight="0.7"
+                        android:maxWidth="1dp"
+                        android:maxLength="10"
+                        android:background="#ffffffff"
+                        android:hint="0" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Fecha:"
+                        android:id="@+id/textView44"
+                        android:layout_weight="0.3" />
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.7">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:inputType="date"
+                                android:id="@+id/componente_mod_fecha"
+                                android:layout_weight="0.6" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="30dp"
+                                android:id="@+id/Button_componente_mod_calendar"
+                                android:layout_weight="0.1"
+                                android:src="@android:drawable/ic_menu_today" />
+
+                        </TableRow>
+                    </TableLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Estado:"
+                        android:id="@+id/textView45"
+                        android:layout_weight="0.3" />
+
+                    <Spinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spinner_componente_estado"
+                        android:layout_weight="0.7"
+                        android:background="#ffffffff" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Precio(€):"
+                        android:id="@+id/textView46"
+                        android:layout_weight="0.3" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/componente_mod_precio"
+                        android:layout_weight="0.7"
+                        android:maxLength="10"
+                        android:background="#ffffffff"
+                        android:hint="0" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Notas:"
+                        android:id="@+id/textView47"
+                        android:layout_weight="0.3" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="textMultiLine"
+                        android:ems="10"
+                        android:id="@+id/componente_mod_notas"
+                        android:layout_weight="0.7"
+                        android:maxLength="300"
+                        android:background="#ffffffff" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Gasto:"
+                        android:id="@+id/textView49"
+                        android:layout_weight="0.3" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:id="@+id/componente_mod_gasto"
+                        android:layout_weight="0.7" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:weightSum="1"
+                    android:layout_marginTop="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:text="Mod Gasto:"
+                        android:id="@+id/textView48"
+                        android:layout_weight="0.3" />
+
+                    <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_weight="0.7">
+
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:inputType="textMultiLine"
+                                android:id="@+id/componente_mod_mod_gasto"
+                                android:maxLength="10"
+                                android:layout_weight="0.8"
+                                android:background="#ffffffff" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Button_componente_gasto_menos"
+                                android:layout_weight="0.1"
+                                android:paddingRight="1dp"
+                                android:paddingLeft="1dp"
+                                android:src="@drawable/ic_action_minus" />
+
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/Button_componente_gasto_mas"
+                                android:layout_weight="0.1"
+                                android:paddingRight="1dp"
+                                android:paddingLeft="1dp"
+                                android:src="@drawable/ic_action_plus"/>
+
+                        </TableRow>
+                    </TableLayout>
+                </TableRow>
+            </TableLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</FrameLayout>

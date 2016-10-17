@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choice_videoAction">
+        <item>Instalar</item>
+        <item>Eliminar</item>
+        <item>Mantenimiento</item>
+    </string-array>
+</resources>

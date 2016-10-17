@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="choice_bikeType">
+        <item>MTB</item>
+        <item>Road (carretera)</item>
+        <item>TT</item>
+        <item>Cross</item>
+    </string-array>
+</resources>

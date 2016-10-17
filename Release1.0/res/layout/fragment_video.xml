@@ -1,0 +1,74 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tfg.carlos.tfgbike.Fragments.Fragment_Video"
+    android:id="@+id/main_content"
+    android:background="#27ff1a00">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|top"
+        android:id="@+id/scrollViewVideos" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minWidth="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:weightSum="1">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/spinner_video_componente"
+                    android:background="#ffffffff"
+                    android:layout_marginRight="5dp" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:id="@+id/spinner_video_accion"
+                    android:background="#ffffffff"
+                    android:layout_marginLeft="5dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ver"
+                android:id="@+id/button_video"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/text_video_url"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <WebView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:id="@+id/webView_video"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="@drawable/urbike_portada"
+                android:backgroundTint="@android:color/transparent"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
